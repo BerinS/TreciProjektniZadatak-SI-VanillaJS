@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  background: rgb(65,109,177);
+  background: linear-gradient(90deg, rgba(65,109,177,1) 0%, rgba(49,144,164,1) 47%, rgba(7,132,207,1) 100%);
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  padding: 24px;
+  gap: 24px;
+}
+
+.notes{
+  height: 300px;
+  box-sizing: border-box;
+  border: none;
+  padding: 16px;  
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;  
+  resize: none;  
+  font-size: 16px;
+}
+
+.add-note {
+  border: none;
+  outline: none;
+  height: 300px;  
+  background: rgba(29, 29, 29, 0.2);
+  border-radius: 10px;
+  font-size: 90px;
+  color: rgba(88, 88, 88, 0.8);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all .2s ease-in-out;
+}
+
+.add-note:hover{
+  transform: scale(1.05);
+  opacity: 1.0;
+}
